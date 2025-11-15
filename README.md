@@ -70,8 +70,8 @@ You’ll see your personal portfolio running locally
 
 ## 📬 Contact
 
-- Email: aminehamzaoui1925@gmail.com   
-- Location: Boumerdès, Algeria  
+- Email: koussaymehdouani@gmail.com   
+- Location: Ben arous, Tunisie  
 - LinkedIn: [LinkedIn](https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit)  
 - GitHub: [GitHub](https://github.com/mehdouanikoussay)  
 - Instagram: [Instagram](https://www.instagram.com/prvt.koussay?igsh=MTVvNXg2empndGFuZQ==)
