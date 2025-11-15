@@ -1,0 +1,172 @@
+/* === Gothic Magic Theme === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, #0d0d0d, #1a1a1a);
+  color: #e0e0e0;
+  font-family: 'Cinzel', serif;
+  scroll-behavior: smooth;
+}
+
+/* Loading Screen */
+#loading-screen {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle, #0d0d0d, #000);
+  color: #d4af37;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+.fall {
+  animation: fall 0.8s forwards;
+}
+
+@keyframes fall {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#main-page {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+#main-page.visible {
+  opacity: 1;
+}
+
+/* Nav */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  border-bottom: 1px solid #b8860b;
+}
+
+.ul-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 2rem;
+  padding: 15px;
+}
+
+.ul-list li a {
+  color: #d4af37;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.ul-list li.active a {
+  color: #fff;
+  text-shadow: 0 0 5px #b8860b;
+}
+
+/* Sections */
+section {
+  padding: 100px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h1, h2, h3 {
+  color: #d4af37;
+  text-shadow: 1px 1px 2px #000;
+  margin-bottom: 20px;
+}
+
+.btnn {
+  display: flex;
+  gap: 1rem;
+  margin-top: 20px;
+}
+
+.btn-home1, .btn-home2, .btn {
+  background: #b8860b;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px rgba(184, 134, 11, 0.5);
+}
+
+.btn-home1:hover, .btn-home2:hover, .btn:hover {
+  background: #d4af37;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.8);
+}
+
+.follow ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.follow ul a {
+  color: #d4af37;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.follow ul a:hover {
+  color: #fff;
+}
+
+.project-card, .skills-list li {
+  background: #1c1c1c;
+  border: 1px solid #444;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(184, 134, 11, 0.3);
+  transition: all 0.3s ease;
+}
+
+.project-card:hover, .skills-list li:hover {
+  box-shadow: 0 0 20px rgba(184, 134, 11, 0.7);
+  transform: translateY(-5px);
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills-list li {
+  padding: 10px 15px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease-out;
+}
+
+.active-reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
