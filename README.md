@@ -8,7 +8,7 @@ Designed to showcase your skills, projects, and experience with elegant animatio
 
 ## 🔗 Live Demo
 You can preview the portfolio locally by opening `index.html` in a modern browser.  
-Or access the online demo here: [Live Demo](https://koussaymehdouani.netlify.app/)
+Or access the online demo here: [Live Demo](https://koussayportoflio.netlify.app/)
 
 ---
 
